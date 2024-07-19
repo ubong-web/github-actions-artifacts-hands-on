@@ -26,10 +26,10 @@ jobs:
     
     steps:
     - name: Download text file
-       uses: actions/download-artifact@v2
-       with:
+      uses: actions/download-artifact@v2
+      with:
          name: hello-artifact
          path: ./artifacts
 
     - name: Display text file  
-        run: cat ./artifacts/hello.txt
+      run: cat ./artifacts/hello.txt
